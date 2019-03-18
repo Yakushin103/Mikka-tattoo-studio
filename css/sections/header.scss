@@ -1,0 +1,107 @@
+header{
+  width: 100%;
+  height: 100vh;
+  background: url(../img/bg-header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Paddis_Handwritten';
+  position: relative;
+}
+
+.navbar{
+  position: absolute;
+  height: 100%;
+  background: rgba(#000, .8);
+  ul{
+    padding-left: 0;
+  }
+  ul li{
+    padding: 20px 5px;
+    a{
+      color: #fff;
+      font-size: 20px;
+      transition: .5s;
+      &:hover{
+        text-decoration: none;
+        text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson, 0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson;
+      }
+    }
+  }
+}
+
+.navbar-social{
+  right: 0;
+  background: none;
+}
+
+.header__bg{
+  width: 100%;
+  height: 100%;
+  background: rgba(#000, .5);
+}
+
+.header__nav{
+  width: 100%;
+  padding: 10px;
+  background: black;
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav__title h2{
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson, 0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson;
+  }
+}
+
+.nav__phone a{
+  color: #fff;
+  font-size: 26px;
+  transition: .5s;
+  &:hover{
+    text-decoration: none;
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson, 0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson;
+  }
+}
+
+.header__items{
+  width: 100%;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__link{
+  img{
+    opacity: .7;
+  }
+  h1{
+    font-size: 80px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation: pulse 2s infinite;
+    @include laptop{
+      font-size: 60px;
+    }
+    @include phones{
+      font-size: 40px;
+    }
+  }
+}
+
+@keyframes pulse{
+  0%{
+    text-shadow: 0 0 1px white, 0 0 3px white, 0 0 8px white, 0 0 12px crimson, 0 0 20px crimson, 0 0 25px crimson, 0 0 30px crimson, 0 0 45px crimson;
+  }
+  50%{
+    text-shadow: 0 0 3px white, 0 0 5px white, 0 0 10px white, 0 0 15px crimson, 0 0 25px crimson, 0 0 30px crimson, 0 0 40px crimson, 0 0 65px crimson;
+  }
+  100%{
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson, 0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson;
+  }
+}

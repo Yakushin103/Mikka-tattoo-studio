@@ -1,0 +1,49 @@
+.glitch,
+.glitch-1{
+  font-weight: bold;
+  position: relative;
+  padding: 5px 30px;
+  &:before, &:after{
+    font-family: 'Paddis_Handwritten';
+    font-weight: bold;
+    content: "Mikka";
+    padding: 5px 30px;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+  }
+  &:before{
+    left: 3px;
+    text-shadow: -2px 0 black;
+    animation: glitch-before 2s linear 0s infinite alternate-reverse;
+  }
+  &:after{
+    left: -3px;
+    text-shadow: -2px 0 #fff;
+    animation: glitch-after 2s linear 0s infinite alternate-reverse;
+  }
+}
+
+.glitch-1{
+  &:before, &:after{
+    content: "tattoo"
+  }
+}
+
+@keyframes glitch-before{
+$steps: 20;
+@for $i from 0 through $steps {
+  #{percentage($i*(1/$steps))} {
+    clip: rect(random(150)+px, 350px, random(150)+px, 30px);
+  }
+}
+}
+
+@keyframes glitch-after{
+$steps: 20;
+@for $i from 0 through $steps {
+  #{percentage($i*(1/$steps))} {
+    clip: rect(random(150)+px, 350px, random(150)+px, 30px);
+  }
+}
+}

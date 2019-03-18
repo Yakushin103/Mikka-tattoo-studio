@@ -1,0 +1,27 @@
+html, body{
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+
+p{
+	font-weight: normal;
+	font-style: normal;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #fff;
+  @include laptop{
+    font-size: 14px;
+  }
+}
+
+ul li{
+  list-style: none;
+}
