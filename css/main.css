@@ -14512,13 +14512,16 @@ header {
     .navbar ul li a {
       color: #fff;
       text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px blue, 0 0 35px blue, 0 0 40px blue, 0 0 50px blue, 0 0 75px blue;
-      font-size: 20px;
+      font-size: 26px;
       -webkit-transition: .5s;
       -o-transition: .5s;
       transition: .5s; }
+      @media screen and (max-width: 992px) {
+        .navbar ul li a {
+          font-size: 20px; } }
       @media screen and (max-width: 480px) {
         .navbar ul li a {
-          font-size: 16px; } }
+          font-size: 14px; } }
       .navbar ul li a:hover {
         text-decoration: none;
         text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson, 0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson; }
@@ -14586,6 +14589,9 @@ header {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  @media screen and (max-width: 480px) {
+    .header__items {
+      padding-top: 0; } }
 
 .header__link img {
   opacity: .7; }
@@ -14599,8 +14605,8 @@ header {
       height: 260px; } }
   @media screen and (max-width: 480px) {
     .header__link img {
-      width: 200px;
-      height: 210px; } }
+      width: 180px;
+      height: 190px; } }
 
 .header__link h1 {
   font-size: 80px;
@@ -14617,6 +14623,7 @@ header {
       font-size: 50px; } }
   @media screen and (max-width: 480px) {
     .header__link h1 {
+      margin-top: 100px;
       font-size: 40px; } }
 
 @-webkit-keyframes pulse {
