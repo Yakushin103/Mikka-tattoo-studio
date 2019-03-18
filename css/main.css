@@ -14471,6 +14471,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   margin-bottom: 0; }
 
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 20px; } }
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 16px; } }
+
 p {
   font-weight: normal;
   font-style: normal;
@@ -14496,14 +14504,14 @@ header {
 
 .navbar {
   position: absolute;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8); }
+  height: 100%; }
   .navbar ul {
     padding-left: 0; }
   .navbar ul li {
     padding: 20px 5px; }
     .navbar ul li a {
       color: #fff;
+      text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px blue, 0 0 35px blue, 0 0 40px blue, 0 0 50px blue, 0 0 75px blue;
       font-size: 20px;
       -webkit-transition: .5s;
       -o-transition: .5s;
@@ -14548,12 +14556,19 @@ header {
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s; }
+  @media screen and (max-width: 768px) {
+    .nav__phone a {
+      font-size: 20px; } }
+  @media screen and (max-width: 480px) {
+    .nav__phone a {
+      font-size: 16px; } }
   .nav__phone a:hover {
     text-decoration: none;
     text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px crimson, 0 0 35px crimson, 0 0 40px crimson, 0 0 50px crimson, 0 0 75px crimson; }
 
 .header__items {
   width: 100%;
+  height: 80%;
   padding-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14571,6 +14586,18 @@ header {
 
 .header__link img {
   opacity: .7; }
+  @media screen and (max-width: 992px) {
+    .header__link img {
+      width: 300px;
+      height: 310px; } }
+  @media screen and (max-width: 768px) {
+    .header__link img {
+      width: 250px;
+      height: 260px; } }
+  @media screen and (max-width: 480px) {
+    .header__link img {
+      width: 200px;
+      height: 210px; } }
 
 .header__link h1 {
   font-size: 80px;
@@ -14582,6 +14609,9 @@ header {
   @media screen and (max-width: 992px) {
     .header__link h1 {
       font-size: 60px; } }
+  @media screen and (max-width: 768px) {
+    .header__link h1 {
+      font-size: 50px; } }
   @media screen and (max-width: 480px) {
     .header__link h1 {
       font-size: 40px; } }
