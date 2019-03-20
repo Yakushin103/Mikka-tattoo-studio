@@ -21,4 +21,8 @@
 
 #galleria{
   height: 500px;
+
+  @include phones{
+    height: 350px;
+  }
 }

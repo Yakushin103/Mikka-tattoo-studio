@@ -14513,6 +14513,12 @@ header {
   background-repeat: no-repeat;
   font-family: 'Paddis_Handwritten';
   position: relative; }
+  @media screen and (max-width: 480px) {
+    header {
+      background: url(../img/bg-header-min.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; } }
 
 .navbar {
   position: absolute;
@@ -14673,6 +14679,9 @@ header {
 
 #galleria {
   height: 500px; }
+  @media screen and (max-width: 480px) {
+    #galleria {
+      height: 350px; } }
 
 /**
  * Galleria Classic Theme 2017-02-13

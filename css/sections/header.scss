@@ -7,6 +7,12 @@ header{
   background-repeat: no-repeat;
   font-family: 'Paddis_Handwritten';
   position: relative;
+  @include phones{
+    background: url(../img/bg-header-min.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 .navbar{
