@@ -7,6 +7,9 @@
 .work__bg{
   padding: 50px;
   background: rgba(#000, .5);
+  @include phones{
+    padding: 10px;
+  }
 }
 
 .work__title{
