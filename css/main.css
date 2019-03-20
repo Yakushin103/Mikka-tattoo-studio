@@ -14947,9 +14947,13 @@ header {
         margin-bottom: 20px; }
       .about__content .about__text {
         width: 100%;
-        text-align: center; }
-      .about__content .col-6 {
-        max-width: 80%; } }
+        text-align: center; } }
+
+.about__link {
+  width: 40%; }
+  @media screen and (max-width: 480px) {
+    .about__link {
+      width: 100%; } }
 
 .about__text h4 {
   font-size: 26px; }
