@@ -13,6 +13,20 @@
   img{
     border-radius: 50px;
   }
+  @include phones{
+    flex-direction: column;
+    img{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .about__text{
+      width: 100%;
+      text-align: center;
+    }
+    .col-6{
+      max-width: 80%;
+    }
+  }
 }
 
 .about__text{

@@ -14661,12 +14661,14 @@ header {
   background-repeat: repeat; }
 
 .work__bg,
-.about__bg {
+.about__bg,
+.studio__bg {
   padding: 50px;
   background: rgba(0, 0, 0, 0.5); }
   @media screen and (max-width: 480px) {
     .work__bg,
-    .about__bg {
+    .about__bg,
+    .studio__bg {
       padding: 50px 10px; } }
 
 .work__title,
@@ -14934,6 +14936,20 @@ header {
   justify-content: space-between; }
   .about__content img {
     border-radius: 50px; }
+  @media screen and (max-width: 480px) {
+    .about__content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .about__content img {
+        width: 100%;
+        margin-bottom: 20px; }
+      .about__content .about__text {
+        width: 100%;
+        text-align: center; }
+      .about__content .col-6 {
+        max-width: 80%; } }
 
 .about__text h4 {
   font-size: 26px; }
@@ -14966,3 +14982,10 @@ header {
   @media screen and (max-width: 480px) {
     .about__text a {
       font-size: 14px; } }
+
+.studio {
+  width: 100%;
+  background: url(../img/studio.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
