@@ -14480,6 +14480,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px; } }
 
 h3 {
+  text-transform: uppercase;
   font-size: 30px;
   letter-spacing: 5px;
   font-family: 'Paddis_Handwritten';
@@ -14659,14 +14660,17 @@ header {
   background: url(../img/bg-work.jpg);
   background-repeat: repeat; }
 
-.work__bg {
+.work__bg,
+.about__bg {
   padding: 50px;
   background: rgba(0, 0, 0, 0.5); }
   @media screen and (max-width: 480px) {
-    .work__bg {
+    .work__bg,
+    .about__bg {
       padding: 50px 10px; } }
 
-.work__title {
+.work__title,
+.about__title {
   margin-bottom: 50px; }
 
 .content {
@@ -14908,3 +14912,57 @@ header {
 .galleria-theme-classic.galleria-container.videoplay .galleria-info,
 .galleria-theme-classic.galleria-container.videoplay .galleria-counter {
   display: none !important; }
+
+.about {
+  width: 100%;
+  background: url(../img/about.jpg);
+  background-repeat: repeat; }
+
+.about__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .about__content img {
+    border-radius: 50px; }
+
+.about__text h4 {
+  font-size: 26px; }
+  @media screen and (max-width: 992px) {
+    .about__text h4 {
+      font-size: 20px; } }
+  @media screen and (max-width: 480px) {
+    .about__text h4 {
+      font-size: 18px; } }
+
+.about__text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+  @media screen and (max-width: 992px) {
+    .about__text p {
+      font-size: 14px;
+      margin-bottom: 10px;
+      margin-top: 10px; } }
+  @media screen and (max-width: 480px) {
+    .about__text p {
+      margin-bottom: 5px;
+      margin-top: 5px; } }
+
+.about__text a {
+  text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px blue, 0 0 35px blue, 0 0 40px blue, 0 0 50px blue, 0 0 75px blue; }
+  .about__text a span {
+    color: #fff;
+    text-shadow: none; }
+  @media screen and (max-width: 480px) {
+    .about__text a {
+      font-size: 14px; } }

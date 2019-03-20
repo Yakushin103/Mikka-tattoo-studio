@@ -4,7 +4,8 @@
   background-repeat: repeat;
 }
 
-.work__bg{
+.work__bg,
+.about__bg{
   padding: 50px;
   background: rgba(#000, .5);
   @include phones{
@@ -12,7 +13,8 @@
   }
 }
 
-.work__title{
+.work__title,
+.about__title{
   margin-bottom: 50px;
 }
 
